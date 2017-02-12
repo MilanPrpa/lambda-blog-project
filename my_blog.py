@@ -1,14 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def greet():
-    return render_template('home.html')
+def intro():
+    return 'Hello, and welcome to my page on this little thing called the internet'
 
 @app.route('/birthday')
-def bday():
-    return 'August 5th 1979'
+def myBday():
+    return 'I was born August 5th, 1979'
 
-@app.route('/greeting/<name>')
-def greeting(name):
-    return 'Hello %s' % 'Milan'
+@app.route('/greeting/<user>')
+def greeting(user):
+    return 'Hello %s' %('Milan')
