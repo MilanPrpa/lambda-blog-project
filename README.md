@@ -1,1 +1,0 @@
-# lambda-blog-project
