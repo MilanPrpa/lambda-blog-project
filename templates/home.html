@@ -1,11 +1,12 @@
-<h1>Welcome, for real this time!</h1>
+<form action="{{ url_for("addrecord")}}" method="POST">
 
-<form action= "{{ url_for('addRecord') }}" method="POST">
+  <h2>Post Your Information Here</h2>
 
-  Title:<br>
-  <input type="text" name="title"><br>
-  Post:<br>
-  <input type="text" name="post"></br>
-  <input type="submit" value="submit"><br>
+    Title:
+    <input type="text" name="title"><br>
+    Post:
+    <input type="text" name="post"><br>
+
+    <input type="submit" value="submit">
 
 </form>
